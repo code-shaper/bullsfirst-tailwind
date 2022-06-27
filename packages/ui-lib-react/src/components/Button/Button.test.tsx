@@ -14,7 +14,7 @@ describe('<Button />', () => {
   });
 
   test('class can be added via rootClass prop', () => {
-    const { asFragment } = render(<Button rootClass="ml-2">Submit</Button>);
+    const { asFragment } = render(<Button className="ml-2">Submit</Button>);
     expect(asFragment()).toMatchSnapshot();
   });
 });
