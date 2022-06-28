@@ -19,9 +19,6 @@
     "generate-css": "postcss src/styles/tailwind.css -o public/main.css",
     "clean": "rimraf .turbo node_modules dist coverage test-output"
   },
-  "dependencies": {
-    "clsx": "^1.1.1"
-  },
   "devDependencies": {
     "@storybook/react": "^6.5.9",
     "@testing-library/dom": "^8.13.0",
@@ -49,6 +46,9 @@
     "typescript-config-custom": "*"
   },
   "peerDependencies": {
-    "react": "^18.*"
+    "@heroicons/react": "^1.*",
+    "clsx": "^1.*",
+    "react": "^18.*",
+    "react-router-dom": "^6.*"
   }
 }
