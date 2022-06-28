@@ -2,3 +2,9 @@
 @import './fonts.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer components {
+  .btn-link {
+    @apply bg-primary-default hover:bg-primary-900 rounded border border-transparent px-4 py-2 text-sm font-medium text-white;
+  }
+}
