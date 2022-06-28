@@ -23,7 +23,7 @@ export function Header({ children }: HeaderProps) {
         <div className="bg-primary-default">
           <div className="max-w-7xl mx-auto h-12 px-4 flex items-center justify-between">
             <span
-              className="flex-1 text-white text-lg leading-none font-normal"
+              className="flex-1 text-white text-base leading-none font-medium"
               onClick={navigateToHome}
             >
               {children}
@@ -38,7 +38,7 @@ export function Header({ children }: HeaderProps) {
                 className="bg-primary-default border-none cursor-pointer"
                 onClick={navigateToSettings}
               >
-                <CogIcon className="h-6 w-6 text-neutral-200 hover:text-neutral-100" />
+                <CogIcon className="h-5 w-5 text-neutral-200 hover:text-neutral-100" />
               </button>
 
               <button
@@ -49,7 +49,7 @@ export function Header({ children }: HeaderProps) {
                 className="bg-primary-default border-none cursor-pointer ml-3"
                 onClick={navigateToHome}
               >
-                <LogoutIcon className="h-6 w-6 text-neutral-200 hover:text-neutral-100" />
+                <LogoutIcon className="h-5 w-5 text-neutral-200 hover:text-neutral-100" />
               </button>
             </div>
           </div>
