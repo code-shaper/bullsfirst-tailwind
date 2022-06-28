@@ -33,7 +33,6 @@ export function Header({ children }: HeaderProps) {
               <button
                 type="button"
                 title="Settings"
-                role="navigation"
                 aria-label="Settings"
                 className="bg-primary-default border-none cursor-pointer"
                 onClick={navigateToSettings}
@@ -44,7 +43,6 @@ export function Header({ children }: HeaderProps) {
               <button
                 type="button"
                 title="Logout"
-                role="navigation"
                 aria-label="Logout"
                 className="bg-primary-default border-none cursor-pointer ml-3"
                 onClick={navigateToHome}
