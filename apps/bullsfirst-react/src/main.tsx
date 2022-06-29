@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { App } from './App';
+import './styles/tailwind.css';
 
 const queryClient = new QueryClient({
   defaultOptions: {
