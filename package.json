@@ -1,6 +1,6 @@
 {
   "name": "bullsfirst-tailwind",
-  "description": "",
+  "description": "An example of using Code Shaper to build a React app with Tailwind CSS",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
