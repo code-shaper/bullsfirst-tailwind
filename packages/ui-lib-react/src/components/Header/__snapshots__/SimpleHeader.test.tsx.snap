@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SimpleHeader /> renders correctly 1`] = `
+<DocumentFragment>
+  <header
+    class="relative"
+  >
+    <nav
+      aria-label="Top"
+    >
+      <div
+        class="bg-primary-default"
+      >
+        <div
+          class="max-w-7xl mx-auto h-12 px-4 flex items-center justify-between"
+        >
+          <span
+            class="flex-1 text-base font-medium text-white"
+          >
+            Bullsfirst
+          </span>
+        </div>
+      </div>
+    </nav>
+  </header>
+</DocumentFragment>
+`;

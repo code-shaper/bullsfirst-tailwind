@@ -15,7 +15,7 @@
     "build": "rimraf dist && run-s bundle generate-css",
     "lint": "eslint src/**/*.ts*",
     "test": "jest --coverage",
-    "bundle": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "bundle": "tsup src/index.ts --format esm,cjs --dts --external react --inject ./react-import.js",
     "generate-css": "postcss src/styles/tailwind.css -o public/main.css",
     "clean": "rimraf .turbo node_modules dist coverage test-output"
   },

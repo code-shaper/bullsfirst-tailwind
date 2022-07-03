@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> class can be added via className prop 1`] = `
+<DocumentFragment>
+  <button
+    class="ml-2 font-medium rounded border border-transparent text-sm leading-4 px-3 py-2 text-neutral-900 bg-gray-200 hover:bg-gray-300"
+  >
+    Submit
+  </button>
+</DocumentFragment>
+`;
+
+exports[`<Button /> colors render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="font-medium rounded border border-transparent text-sm leading-4 px-3 py-2 text-neutral-900 bg-gray-200 hover:bg-gray-300"
+    >
+      Submit
+    </button>
+    <button
+      class="font-medium rounded border border-transparent text-sm leading-4 px-3 py-2 text-white bg-primary-default hover:bg-primary-900"
+    >
+      Submit
+    </button>
+    <button
+      class="font-medium rounded border border-transparent text-sm leading-4 px-3 py-2 text-neutral-900 bg-secondary-default hover:bg-secondary-500"
+    >
+      Submit
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<LinkButton /> class can be added via className prop 1`] = `
+<DocumentFragment>
+  <a
+    class="ml-2 font-medium rounded border border-transparent text-sm leading-4 px-3 py-2 text-neutral-900 bg-gray-200 hover:bg-gray-300"
+    href="/home"
+  >
+    Submit
+  </a>
+</DocumentFragment>
+`;
+
+exports[`<LinkButton /> colors render correctly 1`] = `
+<DocumentFragment>
+  <a
+    class="font-medium rounded border border-transparent text-sm leading-4 px-3 py-2 text-neutral-900 bg-gray-200 hover:bg-gray-300"
+    href="/home"
+  >
+    Submit
+  </a>
+  <a
+    class="font-medium rounded border border-transparent text-sm leading-4 px-3 py-2 text-white bg-primary-default hover:bg-primary-900"
+    href="/home"
+  >
+    Submit
+  </a>
+  <a
+    class="font-medium rounded border border-transparent text-sm leading-4 px-3 py-2 text-neutral-900 bg-secondary-default hover:bg-secondary-500"
+    href="/home"
+  >
+    Submit
+  </a>
+</DocumentFragment>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CenteredMessage /> renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="p-6 flex-1 flex justify-center items-center text-center"
+  >
+    <h1
+      class="text-2xl text-neutral-default"
+    >
+      CenteredMessage
+    </h1>
+  </div>
+</DocumentFragment>
+`;

@@ -1,18 +1,16 @@
-import { Link } from 'react-router-dom';
+import { LinkButton, ViewVerticalContainer } from '@bullsfirst/ui-lib-react';
 import logo from '../../assets/bullsfirst-logo.svg';
 
 export function HomePage() {
   return (
-    <div className="view-vertical-container bg-gradient">
+    <ViewVerticalContainer className="bg-gradient">
       <div className="flex flex-col items-center">
         <img src={logo} alt="logo" width="190" />
         <p className="mt-10 mb-10 text-3xl max-w-sm">
           Get better results with Bullsfirst at the helm of your portfolio.
         </p>
-        <Link className="btn-link" to="/accounts">
-          Show My Accounts
-        </Link>
+        <LinkButton to="/accounts">Show My Accounts</LinkButton>
       </div>
-    </div>
+    </ViewVerticalContainer>
   );
 }

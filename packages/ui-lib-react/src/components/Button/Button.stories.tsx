@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Story, Meta } from '@storybook/react';
-import { Button } from './Button';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Card } from '../Card';
+import { Button, LinkButton } from './Button';
 
 export default {
   title: 'Components/Button',
@@ -34,10 +36,10 @@ ButtonStory.args = {
 
 export const ButtonVariationsStory = () => {
   return (
-    <div className="card max-w-800 p-3">
-      <h1 className="text-2xl font-medium mb-2">Buttons</h1>
+    <Card className="max-w-3xl p-6">
+      <h1 className="text-2xl font-medium">Buttons</h1>
 
-      <h2 className="text-xl mt-6">Contained Buttons</h2>
+      <h2 className="text-xl mt-4">Contained Buttons</h2>
       <div className="mt-1">
         <Button>Default</Button>
         <Button className="ml-2" color="primary">
@@ -108,20 +110,110 @@ export const ButtonVariationsStory = () => {
           Large
         </Button>
       </div>
-
-      <h2 className="text-xl mt-6">Link Buttons</h2>
-      <div className="mt-2">
-        <a className="btn-link" href="https://amazon.com">
-          Amazon
-        </a>
-        <a className="ml-2 btn-link" href="https://apple.com">
-          Apple
-        </a>
-        <a className="ml-2 btn-link" href="https://store.google.com">
-          Google
-        </a>
-      </div>
-    </div>
+    </Card>
   );
 };
 ButtonVariationsStory.storyName = 'Button Variations';
+
+export const LinkButtonVariationsStory = () => {
+  return (
+    <Router>
+      <Card className="max-w-3xl p-6">
+        <h1 className="text-2xl font-medium">Link Buttons</h1>
+
+        <h2 className="text-xl mt-4">Contained Buttons</h2>
+        <div className="mt-2">
+          <LinkButton to="/home">Default</LinkButton>
+          <LinkButton to="/home" className="ml-2" color="primary">
+            Primary
+          </LinkButton>
+          <LinkButton to="/home" className="ml-2" color="secondary">
+            Secondary
+          </LinkButton>
+        </div>
+
+        <h2 className="text-xl mt-8">Outlined Buttons</h2>
+        <div className="mt-2">
+          <LinkButton to="/home" variant="outlined">
+            Default
+          </LinkButton>
+          <LinkButton
+            to="/home"
+            className="ml-2"
+            variant="outlined"
+            color="primary"
+          >
+            Primary
+          </LinkButton>
+          <LinkButton
+            to="/home"
+            className="ml-2"
+            variant="outlined"
+            color="secondary"
+          >
+            Secondary
+          </LinkButton>
+        </div>
+
+        <h2 className="text-xl mt-8">Sizes</h2>
+        <div className="mt-2">
+          <LinkButton
+            to="/home"
+            variant="contained"
+            color="primary"
+            size="small"
+          >
+            Small
+          </LinkButton>
+          <LinkButton
+            to="/home"
+            className="ml-2"
+            variant="contained"
+            color="primary"
+            size="medium"
+          >
+            Medium
+          </LinkButton>
+          <LinkButton
+            to="/home"
+            className="ml-2"
+            variant="contained"
+            color="primary"
+            size="large"
+          >
+            Large
+          </LinkButton>
+        </div>
+        <div className="mt-6">
+          <LinkButton
+            to="/home"
+            variant="outlined"
+            color="primary"
+            size="small"
+          >
+            Small
+          </LinkButton>
+          <LinkButton
+            to="/home"
+            className="ml-2"
+            variant="outlined"
+            color="primary"
+            size="medium"
+          >
+            Medium
+          </LinkButton>
+          <LinkButton
+            to="/home"
+            className="ml-2"
+            variant="outlined"
+            color="primary"
+            size="large"
+          >
+            Large
+          </LinkButton>
+        </div>
+      </Card>
+    </Router>
+  );
+};
+LinkButtonVariationsStory.storyName = 'Link Button Variations';

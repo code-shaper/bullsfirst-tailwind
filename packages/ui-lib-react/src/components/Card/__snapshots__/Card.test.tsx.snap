@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="relative border border-gray-300 rounded-lg bg-white shadow-md"
+  >
+    Card
+  </div>
+</DocumentFragment>
+`;

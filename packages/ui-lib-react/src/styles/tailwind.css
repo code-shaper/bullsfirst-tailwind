@@ -2,39 +2,3 @@
 @import './fonts.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-
-@layer base {
-  .horizontal-container {
-    @apply flex-1 flex flex-row;
-  }
-
-  .view-horizontal-container {
-    @apply h-screen flex flex-row;
-  }
-
-  .vertical-container {
-    @apply flex-1 flex flex-col;
-  }
-
-  .view-vertical-container {
-    @apply h-screen flex flex-col;
-  }
-
-  .centered-container {
-    @apply flex-1 flex justify-center items-center text-center;
-  }
-
-  .view-centered-container {
-    @apply h-screen flex justify-center items-center text-center;
-  }
-
-  .scrolling-container {
-    @apply overflow-auto;
-  }
-}
-
-@layer components {
-  .btn-link {
-    @apply bg-primary-default hover:bg-primary-900 rounded border border-transparent px-4 py-2 text-sm font-medium text-white;
-  }
-}

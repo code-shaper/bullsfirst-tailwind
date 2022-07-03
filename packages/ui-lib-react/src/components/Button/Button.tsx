@@ -1,7 +1,14 @@
-import * as React from 'react';
 import clsx from 'clsx';
+import { Link, LinkProps } from 'react-router-dom';
+import { ButtonProps as ReactButtonProps } from '../ReactProps';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends ReactButtonProps {
+  variant?: 'contained' | 'outlined';
+  color?: 'default' | 'primary' | 'secondary';
+  size?: 'small' | 'medium' | 'large';
+}
+
+interface LinkButtonProps extends LinkProps {
   variant?: 'contained' | 'outlined';
   color?: 'default' | 'primary' | 'secondary';
   size?: 'small' | 'medium' | 'large';
@@ -69,5 +76,28 @@ export function Button({
     <button className={buttonClass} disabled={disabled} {...props}>
       {children}
     </button>
+  );
+}
+
+export function LinkButton({
+  className,
+  variant = 'contained',
+  color = 'default',
+  size = 'medium',
+  children,
+  ...props
+}: LinkButtonProps) {
+  const buttonClass = clsx(
+    className,
+    baseStyles,
+    variantStyles[variant],
+    sizeStyles[size],
+    colorStyles[variant][color]
+  );
+
+  return (
+    <Link className={buttonClass} {...props}>
+      {children}
+    </Link>
   );
 }

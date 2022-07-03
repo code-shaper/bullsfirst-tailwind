@@ -1,9 +1,18 @@
 import { Meta } from '@storybook/react';
 import { SimpleHeader } from '../Header';
+import {
+  CenteredContainer,
+  HorizontalContainer,
+  ScrollingContainer,
+  VerticalContainer,
+  ViewCenteredContainer,
+  ViewHorizontalContainer,
+  ViewVerticalContainer,
+} from './Containers';
 
 export default {
   title: 'Components/Containers',
-  component: SimpleHeader,
+  component: HorizontalContainer,
   parameters: {
     layout: 'fullscreen',
   },
@@ -11,83 +20,83 @@ export default {
 
 export const CenteredContainerStory = () => {
   return (
-    <div className="view-vertical-container">
+    <ViewVerticalContainer>
       <SimpleHeader>Centered Container</SimpleHeader>
-      <div className="centered-container bg-primary-50">
+      <CenteredContainer className="bg-primary-50">
         <h1 className="text-2xl text-neutral-default">Centered Container</h1>
-      </div>
-    </div>
+      </CenteredContainer>
+    </ViewVerticalContainer>
   );
 };
 CenteredContainerStory.storyName = 'CenteredContainer';
 
 export const HorizontalContainerStory = () => {
   return (
-    <div className="view-vertical-container">
+    <ViewVerticalContainer>
       <SimpleHeader>Horizontal Container</SimpleHeader>
-      <div className="horizontal-container">
-        <div className="vertical-container bg-primary-50 p-2">
+      <HorizontalContainer>
+        <VerticalContainer className="bg-primary-50 p-2">
           <h1 className="text-2xl text-neutral-default">Left</h1>
-        </div>
-        <div className="vertical-container bg-secondary-default p-2">
+        </VerticalContainer>
+        <VerticalContainer className="bg-secondary-default p-2">
           <h1 className="text-2xl text-neutral-default">Right</h1>
-        </div>
-      </div>
-    </div>
+        </VerticalContainer>
+      </HorizontalContainer>
+    </ViewVerticalContainer>
   );
 };
 HorizontalContainerStory.storyName = 'HorizontalContainer';
 
 export const VerticalContainerStory = () => {
   return (
-    <div className="view-vertical-container">
+    <ViewVerticalContainer>
       <SimpleHeader>Vertical Container</SimpleHeader>
-      <div className="vertical-container">
-        <div className="vertical-container bg-primary-50 p-2">
+      <VerticalContainer>
+        <VerticalContainer className="bg-primary-50 p-2">
           <h1 className="text-2xl text-neutral-default">Top</h1>
-        </div>
-        <div className="vertical-container bg-secondary-default p-2">
+        </VerticalContainer>
+        <VerticalContainer className="bg-secondary-default p-2">
           <h1 className="text-2xl text-neutral-default">Bottom</h1>
-        </div>
-      </div>
-    </div>
+        </VerticalContainer>
+      </VerticalContainer>
+    </ViewVerticalContainer>
   );
 };
 VerticalContainerStory.storyName = 'VerticalContainer';
 
 export const ViewCenteredContainerStory = () => {
   return (
-    <div className="view-centered-container bg-primary-50">
+    <ViewCenteredContainer className="bg-primary-50">
       <h1 className="text-2xl text-neutral-default">View Centered Container</h1>
-    </div>
+    </ViewCenteredContainer>
   );
 };
 ViewCenteredContainerStory.storyName = 'ViewCenteredContainer';
 
 export const ViewHorizontalContainerStory = () => {
   return (
-    <div className="view-horizontal-container">
-      <div className="vertical-container bg-primary-50 p-2">
+    <ViewHorizontalContainer>
+      <VerticalContainer className="bg-primary-50 p-2">
         <h1 className="text-2xl text-neutral-default">Left</h1>
-      </div>
-      <div className="vertical-container bg-secondary-default p-2">
+      </VerticalContainer>
+      <VerticalContainer className="bg-secondary-default p-2">
         <h1 className="text-2xl text-neutral-default">Right</h1>
-      </div>
-    </div>
+      </VerticalContainer>
+    </ViewHorizontalContainer>
   );
 };
 ViewHorizontalContainerStory.storyName = 'ViewHorizontalContainer';
 
 export const ViewVerticalContainerStory = () => {
   return (
-    <div className="view-vertical-container">
-      <div className="vertical-container bg-primary-50 p-2">
+    <ViewVerticalContainer>
+      <VerticalContainer className="bg-primary-50 p-2">
         <h1 className="text-2xl text-neutral-default">Top</h1>
-      </div>
-      <div className="vertical-container bg-secondary-default p-2">
+      </VerticalContainer>
+      <VerticalContainer className="bg-secondary-default p-2">
         <h1 className="text-2xl text-neutral-default">Bottom</h1>
-      </div>
-    </div>
+      </VerticalContainer>
+    </ViewVerticalContainer>
   );
 };
 ViewVerticalContainerStory.storyName = 'ViewVerticalContainer';
@@ -100,10 +109,10 @@ ViewVerticalContainerStory.storyName = 'ViewVerticalContainer';
 // https://stackoverflow.com/questions/36247140/why-dont-flex-items-shrink-past-content-size
 export const ScrollingContainerStory = () => {
   return (
-    <div className="view-vertical-container">
+    <ViewVerticalContainer>
       <SimpleHeader>Scrolling Container</SimpleHeader>
-      <div className="horizontal-container min-h-0">
-        <div className="scrolling-container w-80 bg-primary-50">
+      <HorizontalContainer className="min-h-0">
+        <ScrollingContainer className="w-80 bg-primary-50">
           {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
             <div
               key={i}
@@ -111,8 +120,8 @@ export const ScrollingContainerStory = () => {
               style={{ height: 60 }}
             />
           ))}
-        </div>
-        <div className="scrolling-container flex-1">
+        </ScrollingContainer>
+        <ScrollingContainer className="flex-1">
           {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
             <div
               key={i}
@@ -120,9 +129,9 @@ export const ScrollingContainerStory = () => {
               style={{ height: 120 }}
             />
           ))}
-        </div>
-      </div>
-    </div>
+        </ScrollingContainer>
+      </HorizontalContainer>
+    </ViewVerticalContainer>
   );
 };
 ScrollingContainerStory.storyName = 'ScrollingContainer';
