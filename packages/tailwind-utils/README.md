@@ -1,11 +1,13 @@
+# Tailwind Preset
+
+This is the Tailwind preset for Bullsfirst. Include in your `tailwind.config.js`
+as follows:
+
+```js
 const tailwindPreset = require('@bullsfirst/tailwind-utils/tailwind-preset.js');
 
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['src/**/*.{js,jsx,ts,tsx}'],
   presets: [tailwindPreset],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+  ...
 };
+```

@@ -1,0 +1,12 @@
+{
+  "name": "@bullsfirst/tailwind-utils",
+  "description": "Tailwind Preset",
+  "version": "0.0.1",
+  "main": "tailwind-preset.js",
+  "license": "MIT",
+  "files": [
+    "tailwind-preset.js",
+    "brand1.css",
+    "brand2.css"
+  ]
+}

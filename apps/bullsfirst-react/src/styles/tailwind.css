@@ -2,3 +2,15 @@
 @import './fonts.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import '@bullsfirst/tailwind-utils/brand1.css';
+
+@layer utilities {
+  .bg-gradient {
+    background-image: radial-gradient(
+      circle,
+      theme('colors.white') 0%,
+      theme('colors.primary.50') 50%,
+      theme('colors.primary.100') 100%
+    );
+  }
+}

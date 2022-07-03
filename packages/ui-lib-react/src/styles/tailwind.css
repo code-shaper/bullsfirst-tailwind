@@ -2,4 +2,4 @@
 @import './fonts.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import './brand1.css';
+@import '@bullsfirst/tailwind-utils/brand1.css';

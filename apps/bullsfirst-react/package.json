@@ -22,6 +22,7 @@
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
+    "@bullsfirst/tailwind-utils": "*",
     "@bullsfirst/ui-lib-react": "*",
     "@storybook/react": "^6.5.9",
     "@testing-library/dom": "^8.13.0",
