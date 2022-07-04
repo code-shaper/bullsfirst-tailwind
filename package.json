@@ -20,7 +20,8 @@
     "prepare": "husky install",
     "format": "prettier --write \"**/README.md\" \"**/src/**/*.{js,jsx,ts,tsx,json}\"",
     "storybook": "cd storybook && npm run storybook",
-    "build-storybook": "cd storybook && build-storybook -s public"
+    "build-storybook": "cd storybook && build-storybook -s public",
+    "cypress": "cd apps/bullsfirst-react && npm run cypress"
   },
   "devDependencies": {
     "@code-shaper/react": "latest",

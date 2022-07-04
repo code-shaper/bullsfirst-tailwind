@@ -1,8 +1,5 @@
 # Bullsfirst Tailwind
 
-**This project is work in progress. The only part that works at the moment is
-running the UI library in Storybook. See the appropriate section below.**
-
 This is an example of using [Code Shaper](https://code-shaper.dev) to build a
 React app with Tailwind CSS.
 
@@ -42,6 +39,7 @@ To build all packages and apps for production, run the following command:
 ```shell
 npm ci
 npm run build
+npm run preview -w @bullsfirst/bullsfirst-react
 ```
 
 ### Clean Build
@@ -83,6 +81,8 @@ npm test
 ```
 
 ## Running End-to-End Tests
+
+**Not yet started**
 
 ```shell
 npm run dev # starts a local server hosting the react app
