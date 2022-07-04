@@ -11,7 +11,7 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-a11y',
   ],
-  staticDirs: ['../../packages/ui-lib-react/public'],
+  staticDirs: ['../../apps/bullsfirst-react/public'],
   framework: '@storybook/react',
   core: {
     builder: '@storybook/builder-webpack5',

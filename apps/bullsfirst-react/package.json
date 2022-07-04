@@ -5,10 +5,11 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && run-s gen-css-for-storybook",
     "preview": "vite preview",
     "lint": "eslint src/**/*.ts*",
     "test": "jest",
+    "gen-css-for-storybook": "postcss src/styles/tailwind.css -o public/main.css",
     "cypress": "cypress open",
     "clean": "rimraf .turbo node_modules dist coverage test-output"
   },
@@ -41,7 +42,6 @@
     "jest": "^28.1.1",
     "jest-config-custom": "*",
     "jest-environment-jsdom": "^28.1.1",
-    "msw": "^0.42.1",
     "postcss": "^8.4.14",
     "postcss-focus-visible": "^6.0.4",
     "postcss-import": "^14.1.0",

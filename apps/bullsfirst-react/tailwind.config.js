@@ -4,7 +4,7 @@ const tailwindPreset = require('@bullsfirst/tailwind-utils/tailwind-preset.js');
 module.exports = {
   content: [
     'src/**/*.{js,jsx,ts,tsx}',
-    '../../node_modules/@bullsfirst/ui-lib-react/dist/index.js',
+    '../../packages/ui-lib-react/src/**/*.{js,jsx,ts,tsx}',
   ],
   presets: [tailwindPreset],
   theme: {

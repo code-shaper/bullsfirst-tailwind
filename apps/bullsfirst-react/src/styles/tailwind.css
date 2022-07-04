@@ -4,7 +4,38 @@
 @import 'tailwindcss/utilities';
 @import '@bullsfirst/tailwind-utils/brand1.css';
 
+@layer base {
+  table {
+    @apply w-full table-auto border-none border-collapse text-left;
+  }
+
+  table tr:nth-of-type(2n) {
+    @apply bg-gray-100;
+  }
+
+  td,
+  th {
+    @apply px-1 py-3 align-middle;
+  }
+
+  thead {
+    @apply border-t-2 border-b-2 border-solid border-gray-300;
+  }
+
+  tfoot {
+    @apply text-xl font-medium border-t-2 border-solid border-gray-300;
+  }
+
+  .link {
+    @apply text-primary-default no-underline;
+  }
+}
+
 @layer utilities {
+  .flex-200px {
+    flex: 0 0 200px;
+  }
+
   .bg-gradient {
     background-image: radial-gradient(
       circle,

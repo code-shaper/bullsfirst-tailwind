@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react';
 import { ViewCenteredMessage } from './ViewCenteredMessage';
 
 export default {
-  title: 'Components/ViewCenteredMessage',
+  title: 'Components/CenteredMessage',
   component: ViewCenteredMessage,
 } as Meta;
 
