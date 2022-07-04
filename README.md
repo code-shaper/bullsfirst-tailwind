@@ -1,15 +1,21 @@
 # Bullsfirst Tailwind
 
-This is an example of using [Code Shaper](https://code-shaper.dev) to build a
-React app with Tailwind CSS.
-
-It consists of:
-
-1. `packages/ui-lib-react`: a React component library that uses Tailwind CSS
-2. `apps/bullsfirst-react`: a sample stock trading app that uses the above UI
-   library
+This is an example of using [Code Shaper](https://code-shaper.dev) to build
+React apps with Tailwind CSS.
 
 ![Holdings Page](assets/holdings.png)
+
+## Architecture
+
+The repository contains a sample stock trading application called Bullsfirst,
+which uses React as its base framework. It depends on a package called
+`ui-lib-react` for common reusable components like buttons and cards. All
+components in the app and the library are built using Tailwind CSS. A tailwind
+preset is available in `tailwind-utils` which is used by both, the app and the
+library. `tailwind-utils` also houses two brand palettes that can be used to
+configure the application's theme using CSS variables.
+
+![Architecture](assets/architecture.png)
 
 ## Building Bullsfirst
 

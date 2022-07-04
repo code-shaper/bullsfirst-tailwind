@@ -13,7 +13,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "graph": "turbo run build --graph",
+    "graph": "turbo run build --graph=dependency-graph.png",
     "lint": "turbo run lint",
     "test": "turbo run test",
     "clean": "turbo run clean && rimraf node_modules",
