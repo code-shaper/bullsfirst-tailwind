@@ -1,7 +1,7 @@
 # Bullsfirst Tailwind
 
 This is an example of using [Code Shaper](https://code-shaper.dev) to build
-React apps with Tailwind CSS.
+React apps with [Tailwind CSS](https://tailwindcss.com/).
 
 ![Holdings Page](assets/holdings.png)
 
